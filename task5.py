@@ -1,8 +1,10 @@
-ax = float(input('Введите координаты точки a по оси x:'))
-ay = float(input('Введите координаты точки a по оси y:'))
-bx = float(input('Введите координаты точки b по оси x:'))
-by = float(input('Введите координаты точки b по оси y:'))
+import datetime 
 
-import math
-distans = math.sqrt((ax-bx)**2+(ay-by)**2)
-print(f'Растояние между точкой A до точки B = {distans}')
+min_n = 1
+max_n = 100
+
+def get_rand():
+    return datetime.datetime.now().microsecond%10
+
+n = get_rand()
+print(n)
